@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <script>
+      const swalo = Swal.mixin({ allowOutsideClick: false, showCancelButton: false, customClass: { popup: "border-radius" } });
+    </script>
+    <link rel="stylesheet" href="https://files.dariku.my.id/dk202/style.css" />
+    <title>Spesial Untuk Yohanita</title>
+  </head>
+  <body>
+    <div class="preload"><p>Sek syg uni, Loading dulu . . .</p></div>
+    <div class="open">
+      <div>
+        <div class="lope" onclick="ilang()"><i class="love material-icons-sharp "> favorite </i></div>
+        <h3>Pencet Love yg diatas yun 💙 </h3>
+        <h3>Btw Sorry Yun Kalo kurang bagus, Smoga Yun suka yang qt buat ni.</h3>
+        <h3>Sorry juga kalo t pandai merangkai kata seperti ayg uni🙏</h3>
+      </div>
+    </div>
+    <div class="bg">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="bg-love"></div>
+    <div class="content adascroll contentslide1">
+      <div class="slidekuy1">
+        <p id="typetxt" class="typetxt1"></p>
+        <button id="lanjut" class="lanjut1" onclick="tampilContent2()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+    <div class="content2 contentslide2">
+      <div class="txtPilihHadiah">
+        <p style="max-width: 70vw" class="typetxt2"></p>
+      </div>
+      <div class="hadiahku">
+        <div class="row">
+          <img src="https://files.dariku.my.id/dk202/kado.png" class="kado" />
+          <img src="https://files.dariku.my.id/dk202/kado.png" class="kado" />
+        </div>
+        <div class="row">
+          <img src="https://files.dariku.my.id/dk202/kado.png" class="kado" />
+          <img src="https://files.dariku.my.id/dk202/kado.png" class="kado" />
+        </div>
+      </div>
+    </div>
+
+    <div class="content adascroll contentslide4">
+      <div class="slidekuy2">
+        <p id="typetxt" class="typetxt4"></p>
+        <button id="lanjut" class="lanjut4" onclick="tampilContent5()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+
+    <div class="content contentadascroll contentslide5">
+      <div class="slidekuy">
+        <p id="typetxt" class="typetxt5"></p>
+      </div>
+      <button id="lanjut" class="lanjut5" onclick="tampilContent6()">Klik untuk Lanjut ya!</button>
+    </div>
+
+    <div class="content adascroll contentslide6">
+      <div class="slidekuy3">
+        <p id="typetxt" class="typetxt6"></p>
+        <button id="lanjut" class="lanjut6" onclick="tampilContent3()">Klik untuk Lanjut ya!</button>
+      </div>
+    </div>
+
+    <div class="content2 contentslide3">
+      <div class="txtPilihHadiah">
+        <p class="typetxt3"></p>
+      </div>
+      <div class="formwish">
+        <textarea name="" id="valuewish" rows="7"></textarea>
+      </div>
+      <button class="kirimwish" onclick="sendwish()">Kirim</button>
+    </div>
+
+    <div class="wm">
+      <p></p>
+    </div>
+
+    <script>
+      // ========================
+
+      // Musik
+      musik = "yunfav.mp3";
+
+      // Daftar Foto
+      background1 = "foto 10.jpg";
+      background2 = "foto 4.jpg";
+      background3 = "foto 7.jpg";
+      background4 = "foto 13.jpg";
+      background5 = "foto 11.jpg";
+      background6 = "yun all.png";
+
+      // Ucapan Slide 1
+      ucapan1 = "Selamat Ulang Tahun, Yohanita Lusia Semoi Lein💙 # Selamat Ulang Tahun, Yun. # Selamat Ulang Tahun, Sahabatku! ## Semoga qt jadi orang pertama yg ucap yunn. Semoga qt jadi orang pertama yang kasih yun hadiah. 😋🥰 ## Yunn, Selamat Ulang Tahun e, # Semoga panjang umur, sehat selalu serta sukses selalu dalam Kuliah dan Masa Depannya yunn. ## Forget the past, it is gone. Do not think of the future, it has not come. But live in the present because it’s a gift and that’s why it’s called the present. Happy birthday, Yunn! I wish you a day filled with joy, happiness, love, and years filled with God’s blessings. ## Ciieee, So 24 Tahun le.. Huu.. Hidup Yuni. # Yunn, sorry t bisa ucap secara langsung, t jabat tangan langsung, t bisa tiup lilin bareng😅, t bisa beri hadiah langsung, sorry k yun ee. Rindu nk bah, sayang kamu skali,  ";
+     
+
+      // Ucapan Slide 2 / Pilihan Kado
+      ucapan2 = "Main Game dulu ee, hahaha #Ini ada kado buat yunn ni, pilih satu ee yunn #(Btw awas ada kado yang bahaya tu😁. P )";
+      kado1 = "Horree, Selamat yun dapat Gacoan🍜";
+      kado2 = "Yeayy, yun dapat Rujakk🍉";
+      kado3 = "Yeayy, yun dapat Mixue🍦";
+      kado4 = "Yeayy, yun dapat Sempolll Crispy🍡";
+
+      // Ucapan Slide 3
+      ucapan3 = "Yun.. ## Selamat Ulang Tahun, Semoga hari ini menjadi hari yang penuh kebahagiaan dan keberkahan buat yunn. # Semoga hari ini menjadi hari yang penuh kesehatan dan kesembuhan untuk yunn. # Qt selalu berdoa yun selalu sehat, bugar, selalu sembuh, pulih dalam setiap luka yang datang. ## Semoga hari ini menjadi hari yang penuh tantangan dan petualangan untuk yun. # Qt harap yun slalu lebih berani, percaya diri, tumbuh menjadi wanita yang lebih kuat, wanita yg lebih mandiri. Selalu tabah dan kuat menghadapai segala tantangan. ## Yun Selamat Ulang Tahun e, Selamat menyelam yang lebih dalam di Lautan Kedewasaan. Selamat Berpetualang Yohanita. ### Everything you lose is a step you take. You've got no reason to be afraid!!! (YLSL) ";
+
+      // Ucapan Slide 4
+      ucapan4 = "Yunn.. ## Semoga hari ini menjadi hari yang penuh keindahan dan keajaiban buat Yunn. # Qt harap yun selalu merasa dicintai, disayangi, dan dihargai oleh orang-orang yang tersayang. selalu bersyukur, dan selalu bahagia yunn. ## jangan lupa yah yun.. Terima Kasih kepada Tuhan. # kasih ucapan Terima Kasih untuk Keluarga yah yun.# Terima kasih karna selalu ada untuk yun,selalu dukung yun dalam segala hal. # Terima Kasih Bapa dan Mama # Terima kasih Ka Ronal dan Ka Riki. # Jo jgn lupa kasih ucapan Terima kasih untuk diri sendiri ee yunn🤗. ### ingat kata Yohanita😅 # Sejauh apapun kamu melangkah, kemana saja kamu akan pergi, tempat terbaik untuk kembali adalah keluarga. Keluarga akan selalu menerimamu, mendengarkanmu, dan memberikan nasihat terbaik untukmu. Keluarga  tempat pertama kamu mengukir cerita hidup, tidak akan membiarkanmu jatuh. 💙 (YLSL)";
+
+      // Ucapan Slide 5
+      ucapan5 = "Yunn ee, qt punya harapan besar untuk yun. ## Sebelum itu, qt mau omg terimakasih banyak e yun untuk selama ini, terimakasih slalu ada untuk qt, terimakasih so slalu dukung qt, terimakasih atas sabarmu, terimakasih buat semua yang yun kasih ke qt, makasih atas effort, perhatian, apapun itu dalam bentuk apapun itu, terimakasih banyak ee Yunn. ## Qt minta maaf yun t bisa mengerti yunn, Kadang2 t paham sama pikiran yun pu, Qt minta maaf e Yun, Maaf untuk perilaku yang yg kurang bae, maaf selalu bua repot yun, maaf yun so kasar mo yun, so marah yun, maaf k ee yun🙏 qt t mungkin kah marah yun😘 sorry kadang t bisa kontrol emosi🙏, me qt trada marah qt pu ayang k😘🙏 # Jangan marah qt e, qt minta maaf, Jangan bosan mo qt, jangan jauh2 mo qt, jangan blok legi k, buka da k, Pleaseee, tetap Sahabatan mo qt k e, Syg yun, Rindu yun. im so lucky have you ## Yun qt punya Harapan Besar dari yun, # Semoga di Tahun ini Yun So bisa Sempro ee, AMINN. Intinya Tahun ini so 75%, OKayy!! # Semoga Tahun Depan Yun So bisa abis jo Wisuda. AMinnn. # Qt yakin Yun pasti bisa, qt pu ayang uni terbaik lee..Hidup Yun.. # Kalo Yun ada kesulitan atau ada butuh bantuan HARUS OMG QT, T omg qt MARAH😡. Qt slalu siap bantu yun Dukung yun. OKAYY!! # Intinya Yun fokus dalam kuliahnya, jgn trlalu begadang, jgn makan pedis, jgn trlalu sering makan es & Mie yah. # Jo abis itu Tahun depan qt bisa kesitu dgn calon Keluarga untuk Hadiri Wisuda nya Yun yahh😋😎. AMINN.## Buat BANGGA MAMA, PAPA & KAKAK YAH!! ### Yun e, qt mau omg, ehh slide terakhir jo,,hahaha # ehh trada omg da, haha, ne sbenarnya qt so beli Yun hadiah abi, Hadiah tu ada di bawah bantal sekarang😎 ";
+
+      // Ucapan Slide 6
+      ucapan6 = "haha beh aka jo k. Yun e, qt ada beri hadiah tu semoga yun suka ee, sorry kalo kurang keren, soalnya qt belum liat😅# Kayaknya qt pu Kado yg paling pertama le😅😎, Amin Semoga,haha # Smua barang yg qt pesan barusan tu, Itu sebenarnya qt beli Hadiah Yun pu. Yun buka da, buka dari yg lembut dulu ee, yg keras tu terakhir😁 ### Jo kolom di bawah ni qt minta Yun tulis hal apa jo, Ucapan terima kasih atau Harapan atau doa atau apapun itu, # jo kirim yah, terserah kemana, atau kirim pi qt jo😄, Monggo kak Yuni Tokan";
+
+      // Watermark
+      tag = "by FadlyTokan";
+
+      // Pop up setelah kado
+      async function setelahKado(inijanganhapus) {
+        await swalo.fire({ title: "Lanjut gak nihh", confirmButtonText: "Lanjuttt" });
+
+        inijanganhapus();
+      }
+
+      // Pop up setelah wish
+      async function sendwish() {
+        pesanku = valuewish.value;
+        if (pesanku) {
+          await swalo.fire({ confirmButtonText: "OK", title: "Kirim ke wa aku ya" });
+          location.assign(`https://wa.me/?text=${pesanku}`);
+        } else {
+          await swalo.fire({ confirmButtonText: "OK", title: "Jangan dikosongin dong" });
+        }
+      }
+    </script>
+    <script src="https://files.dariku.my.id/dk202/scripts.js"></script>
+  </body>
+</html>
